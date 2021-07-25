@@ -1,15 +1,15 @@
 ## users table
 
-| Column             | Type   | Option        |
-| ------------------ | ------ | ------------- |
-| nickname           | string | null: false   |
-| e-mail             | string | unique: true  |
-| encrypted_password | string | null: false   |
-| last_name          | string | null: false   |
-| first_name         | string | null: false   |
-| last_name_kana     | string | null: false   |
-| first_name_kana    | string | null: false   |
-| birthday           | date   | null: false   |
+| Column             | Type   | Option                     |
+| ------------------ | ------ | -------------------------- |
+| nickname           | string | null: false                |
+| email              | string | null: false, unique: true  |
+| encrypted_password | string | null: false                |
+| last_name          | string | null: false                |
+| first_name         | string | null: false                |
+| last_name_kana     | string | null: false                |
+| first_name_kana    | string | null: false                |
+| birthday           | date   | null: false                |
 
 ### Association
 
@@ -21,6 +21,7 @@
 
 | Column           | Type         | Option                          |
 | ---------------- | ------------ | ------------------------------- |
+| product_name     | string       | null: false                     |
 | description      | text         | null: false                     |
 | category_id      | integer      | null: false                     |
 | condition_id     | integer      | null: false                     |
@@ -55,7 +56,7 @@
 | Column           | Type         | Option                          |
 | ---------------- | ------------ | ------------------------------- |
 | zip_code         | string       | null: false                     |
-| area             | integer      | null: false                     |
+| area_id          | integer      | null: false                     |
 | municipality     | string       | null: false                     |
 | street_number    | string       | null: false                     |
 | building         | string       |                                 |
